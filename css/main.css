@@ -27,7 +27,193 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
+.speciality{
+	background: #f2f3f5;
+}
+.bordered {
+    background: #fff;
+    box-shadow: 0 0 20px #00a98f4f;
+}
+.bordered figure {
+    margin-bottom: 20px;
+}
+figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+figure img {
+    display: block;
+    max-width: 100%;
+}
+.bordered h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+.bordered p {
+    padding: 15px 15px 5px 15px;
+    color: #8c9398;
+}
+.lines {
+   margin: auto;
+   width: 70px;
+   position: relative;
+   border-top: 2px solid #619ad2;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
 
+/*-- About Section --*/
+
+
+.about-content {
+    padding-left: 40px;
+}
+.about-details p {
+    margin-bottom: 20px;
+}
+
+h3.heading {
+	font-size: 2.5em;
+    letter-spacing: 1px;
+    color: #404040;
+    font-family: 'Poor Story', cursive !important;
+    margin-bottom: 10px;
+}
+.about-content {
+  padding-left: 40px;
+}
+.about-details p {
+  margin-bottom: 20px;
+}
+
+h3.heading {
+font-size: 2.5em;
+  letter-spacing: 1px;
+  color: #404040;
+  font-family: 'Poor Story', cursive !important;
+  margin-bottom: 10px;
+}
+/*services section*/
+.heading_white {
+font-size: 2.5em;
+letter-spacing: 1px;
+color: rgb(53, 92, 171);
+font-family: 'Poor Story', cursive !important;
+margin-bottom: 10px;
+}
+
+.service_grids {
+padding: 0 2em;
+}
+
+
+.vanilla_container {
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/csm_panjin_c2ad083c03.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  
+}
+
+
+.nav-container {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-self: flex-start;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.5s;
+	z-index: 50;
+}
+.nav-container.black {
+	background-color: rgb(0,0,0,.4);
+	height: 90px;
+	padding: 10px 50px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.links ul {
+	list-style-type: none;
+	display: flex;
+	transition: 0.5s;
+
+}
+
+.links ul li a {
+	text-decoration: none;
+	color: #fdfafa;
+	padding: 5px 20px;
+	line-height: 20px;
+	border-radius: 20px;
+	transition: .6s;
+	letter-spacing: 1px;
+	font-weight: 600;
+	width: 400px;
+
+}
+
+.links ul li a:hover {
+	border : 2px solid #E6F4F0;	
+	box-sizing: border-box;
+
+}
+
+.logo img {
+	width: 200px;
+	height: inherit;
+	padding-left: 20px;
+	transition: 0.5s;
+}
+
+/*Styling middle-logo*/
+
+.middle-logo {
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	cursor: default;
+	text-shadow:2px 2px 11px #AFE2F7;
+  	
+}
+
+
+.g{
+	color: #FF2929;
+}
+.c {
+	color: #FFFF2C;
+}
+
+#f_font {
+	font-weight: lighter;
+	font-size: 25px;
+	margin-left: 10px;
+	align-self: start; 	
+	color: #fff;
+
+}
+
+#s_font {
+	font-size: 90px;
+	font-weight: 900;
+}
+
+#t_font {
+	align-self: flex-end;
+	color: #fff;
+}
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -497,6 +683,169 @@ iframe {
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
 
 @media (max-width: 992px) {
